@@ -34,14 +34,37 @@ header h1{
     background-color: #dfe6e9 ;
     line-height: 5rem;
 }
-nav ul li{
+header h1::before{
+
+}    
+/* nav ul li{
     text-align: center;
     vertical-align: center;
     background-color: #fff;
     line-height: 6rem;
     cursor: pointer;
     
+} */
+nav{
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    background-color: #fff;
+    line-height: 4rem;
+ 
 }
+
+nav ul{
+    list-style-type: none;
+}
+
+nav li{
+    display: inline-block;
+    margin-right: 1.5rem;
+    text-transform: uppercase;
+    vertical-align: center;
+}
+
 li img{
     margin : 0 auto 0 auto;
     width: 30%;
