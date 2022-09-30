@@ -35,16 +35,12 @@ header h1{
     line-height: 5rem;
 }
 header h1::before{
+    content: url(../favicon/favicon-32x32.png);
+    vertical-align: -0.2rem;
+    margin-right: 1rem;
+    object-fit: contain;
 
 }    
-/* nav ul li{
-    text-align: center;
-    vertical-align: center;
-    background-color: #fff;
-    line-height: 6rem;
-    cursor: pointer;
-    
-} */
 nav{
     display: inline-block;
     text-align: center;
