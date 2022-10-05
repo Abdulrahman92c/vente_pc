@@ -90,6 +90,11 @@ figure figcaption ol{
     margin-top: 2rem;
     line-height: 2.5rem;
 }
+figure figcaption ol li{
+    font-weight: 350;
+    margin-top: 2rem;
+    line-height: 2.5rem;
+}
 figure button
 {
     position: absolute;
