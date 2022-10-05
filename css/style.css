@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
 /* reset css */
 html
 {
@@ -6,7 +6,7 @@ html
 }
 body
 {
-    font: 1.6rem 'Raleway', sans-serif;
+    font: 1.6rem 'Roboto', sans-serif;
     margin: 0;
     line-height: 1.6rem;
     background-color: #2d3436; 
@@ -17,7 +17,7 @@ h1,h2,h3,h4,p, figure,ol,ul
     margin: 0;
     padding: 0;
     list-style-type: none;
-    font-weight: 300;
+  
 }
 *
 {
@@ -28,39 +28,20 @@ a
     text-decoration: none ;
     color: #000;
 }
-img
-{
-    display: flex;
-    width:100%;
-    height:100%;    
-}
 
-/* theme css */
+/*theme*/
 
 header h1
 {
     text-align: center;
     background-color: #dfe6e9 ;
     line-height: 5rem;
+    font-weight: 100;
 
 }
-header h1::before
+header h1 img
 {
-    content: url(../favicon/favicon-32x32.png) ;
-    vertical-align: -0.2rem;
-    margin-right: 1rem;
-    object-fit: contain;
-
-}    
-nav ul li img 
-{
-    display: inline-block;
-    height: 20px;
-    width: 20px;
-    vertical-align: -0.2rem;
-    margin-right: 1rem;
-    
-    
+    vertical-align: -.1rem;
 }
 nav 
 {
@@ -76,94 +57,60 @@ nav ul li
     display: inline-block;
     margin:0  5rem 0;
 }
-
-/* nav{
+nav ul li img 
+{
     display: inline-block;
-    text-align: center;
-    width: 100%;
-    background-color: #fff;
-    line-height: 4rem;
- 
-}
-
-nav ul{
-    list-style-type: none;
-}
-
-nav ul li{
-    display: inline-block;
-    margin-right: 1.5rem;
-    text-transform: uppercase;
-    vertical-align: center;
-}
-
-nav ul li img{
-    margin : 0 auto 0 auto;
-    width: 30%;
-    height: 30%;
-    padding: 5rem;
-    
-} */
-figure {
-    position:relative;
-    background-color:#fff;
-     max-width: 80rem;
-     height: 40rem;
-       margin : 10rem auto 10rem auto ;
-        border-radius: .8rem;
+    height: 20px;
+    width: 20px;
+    vertical-align: -0.2rem;
+    margin-right: 1rem;
 }
 figure 
 {
-          display: flex;
-        font-size: 14px;  
+    position:relative;
+    background-color:#fff;
+    max-width: 80rem;
+    height: 40rem;
+    margin : 10rem auto 10rem auto ;
+    border-radius: .8rem;
+   display: flex;
+    
 }
+figure figcaption 
+{
+    padding: 5rem 0 0;
+} 
 figure figcaption h2 
 {
-         font-size: medium;
-         margin: .8rem;
+    font-size: medium;
+    font-weight: bolder;
+    margin-bottom: 2rem;
 }
-
-figure figcaption p
-{
-    margin: .8rem;
-
+figure figcaption ol{
+    margin-top: 2rem;
+    line-height: 2.5rem;
 }
-
 figure button
 {
     position: absolute;
     bottom: 10px;
     right: 10px;
-    display: flex;
     background-color:#D14600;
     color: #fff;
     border-radius: 5px;
     padding: .5rem  .5rem;
-    border-radius: .8rem;
-   
-   
-}
-button
-{
+    width: 20rem;
     margin: 10rem 1rem 1rem 24rem;
-    position: absolute;
-    display: flex;
-    background-color: #D14600;
-    color: #fff;
-    border-radius: 5px;
     border: none;
-    font-size: 17px;
+    font-size: inherit;
     cursor: pointer;
-    align-items: center;
-    justify-content: center;
-    padding: 0.5rem;
+    line-height: 3.5rem;
 }
 button img
 {
     filter: invert(100%);
-    display: flex;
-    margin-top: 0.7rem;
-    margin-left: 0.3rem;
+    vertical-align: middle;
+    margin-right: 0.3rem;
 }
 footer
 {
@@ -174,46 +121,47 @@ footer
 
 /* responsive */
 @media screen and (max-width: 700px){
-    body {
+    body 
+    {
         background-color:#fff;
     }
-
-    header{
-        font-size: 2rem;
-        text-align: center;
-        
+    main{
+        max-width:30rem;
     }
-    nav ul li {
+    header
+    {
+        font-size: 2rem;
+        text-align: center;        
+    }
+    nav ul li 
+    {
         display: flex;
         margin: .8rem;
-
     }
-
-    main figure {
+    figure 
+    {
         margin: 0 ;
         display: block;
-      
- }
-    figure figcaption h2 {
+    }
+    figure figcaption h2 
+    {
         padding-left: 2rem;
     }
 
-    figure figcaption ol li {
-    padding-left: 1rem;
+    figure figcaption ol li 
+    {
+        padding-left: 1rem;
     }
-     figure button {
-        
-        margin:0 12rem;
-        
-        
+    figure button 
+    {
+        margin:0 12rem ;
     }
-    footer {
+    footer     
+    {
        padding: 0rem;
        margin: 20rem auto 0;
        position: inherit; 
        bottom: 0;
        background-color: #eeecec;
-       
-       
     }
 }
