@@ -33,11 +33,11 @@ a
 
 :root
 {
-    --bgc-primary: #ffffff;
-    --bgc-button:#DA6930;
+    --bgc-primary:#fff;
+    --bgc-button:#d14600;
     --bgc-title: #DFE6E9;
     --bgc-hover :#D3D3D3;
-    --color-text: #000;
+    --color-text:#000;
     --color-bgc: #2d3436;
 
 
@@ -68,10 +68,10 @@ nav ul li
     margin:0 1rem 0;
     padding: 0 1rem 0 1rem;
 }
-nav ul li:hover{
+nav ul li:hover
+{
     background-color:var(--bgc-hover);
-    border-radius: .6rem;
-    
+    border-radius: .6rem;  
 }
 nav ul li img 
 {
