@@ -23,6 +23,10 @@ h1,h2,h3,h4,p, figure,ol,ul
 {
     box-sizing: border-box;
 }
+.material-symbols-outlined
+{
+    vertical-align: middle;
+}
 a
 {
     text-decoration: none ;
@@ -126,6 +130,9 @@ figure button
     font-size: inherit;
     cursor: pointer;
     line-height: 3.5rem;
+}
+main figure button .material-symbols-outlined{
+color: #fff;
 }
 button img
 {
