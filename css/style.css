@@ -75,7 +75,7 @@ nav ul li
 nav ul li:hover
 {
     background-color:var(--bgc-hover);
-    border-radius: .6rem;  
+    border-radius: .6rem;
 }
 nav ul li img 
 {
@@ -177,10 +177,12 @@ footer
     {
         display: block;
         width: auto;
+        margin: 5rem auto;
     }
     figure img
     {
         max-width: 30rem;
+        margin:auto 5rem;
     }
     figure li
     {
