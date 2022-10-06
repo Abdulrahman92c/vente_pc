@@ -9,7 +9,7 @@ body
     font: 1.6rem 'Roboto', sans-serif;
     margin: 0;
     line-height: 1.6rem;
-    background-color: #2d3436; 
+    background-color:var(--color-bgc) ; 
 }
 h1,h2,h3,h4,p, figure,ol,ul
 {
@@ -36,8 +36,11 @@ a
     --bgc-primary: #ffffff;
     --bgc-button:#DA6930;
     --bgc-title: #DFE6E9;
+    --bgc-hover :#D3D3D3;
     --color-text: #000;
-    --color-bgc: #414141;
+    --color-bgc: #2d3436;
+
+
 }
 header h1
 {
@@ -45,7 +48,6 @@ header h1
     background-color:var(--bgc-title);
     line-height: 5rem;
     font-weight: 100;
-
 }
 header h1 img
 {
@@ -67,7 +69,7 @@ nav ul li
     padding: 0 1rem 0 1rem;
 }
 nav ul li:hover{
-    background-color:#D3D3D3;
+    background-color:var(--bgc-hover);
     border-radius: .6rem;
     
 }
@@ -87,7 +89,7 @@ figure
     height: 40rem;
     margin : 10rem auto 10rem auto ;
     border-radius: .8rem;
-   display: flex;
+    display: flex;
     
 }
 figure figcaption 
@@ -135,46 +137,63 @@ button img
 }
 footer
 {
+    padding: 1rem;
+    margin: auto;
     text-align: center;
     background-color: var(--bgc-primary);
     line-height: 3rem;
+  
 }
 
 /* responsive */
-@media screen and (max-width: 700px){
-    body 
+@media screen and (max-width: 50rem){
+    body{
+        background-color: #fff;
+    }
+    main
     {
-        background-color:var(--bgc-primary);
+        margin: 0rem;
     }
-    main{
-        max-width:30rem;
-    }
-    header
-    {
-        font-size: 2rem;
-        text-align: center;        
-    }
-    nav ul li 
+    nav ul
     {
         display: flex;
-        margin: .8rem;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        margin: 0rem;
+        padding: 0rem;
+    }
+    nav ul li
+    {
+        margin: 0rem;
     }
     figure 
     {
-        margin: 0 ;
+        display: flex;
+        flex-direction: column;
+        font-size: 14px; 
+    }
+    main figure img
+    {
+        max-width: 30rem;
+    }
+    main figure div
+    {
+        margin: 0 auto;
+    }
+    main figure figcaption
+    {
+        margin: 0rem 1rem;
+    }
+    main figure button
+    {
         display: block;
-    }
-    figure figcaption h2 
-    {
-        padding-left: 2rem;
-    }
+        position: inherit;
+        margin: 1rem auto;
 
-    figure figcaption ol li 
-    {
-        padding-left: 1rem;
     }
-    figure button 
-    {
-        margin:0 12rem ;
+    footer{
+            margin: 0;
+            padding: 0;
+        }
     }
-}
