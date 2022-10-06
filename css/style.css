@@ -31,10 +31,18 @@ a
 
 /*theme*/
 
+:root
+{
+    --bgc-primary: #ffffff;
+    --bgc-button:#DA6930;
+    --bgc-title: #DFE6E9;
+    --color-text: #000;
+    --color-bgc: #414141;
+}
 header h1
 {
     text-align: center;
-    background-color: #dfe6e9 ;
+    background-color:var(--bgc-title);
     line-height: 5rem;
     font-weight: 100;
 
@@ -45,7 +53,7 @@ header h1 img
 }
 nav 
 {
-    background-color:#fff;
+    background-color:var(--bgc-primary);
     padding: .1rem 0 0;
     text-align: center;
     font-size: medium;
@@ -55,7 +63,13 @@ nav
 nav ul li
 {
     display: inline-block;
-    margin:0  5rem 0;
+    margin:0 1rem 0;
+    padding: 0 1rem 0 1rem;
+}
+nav ul li:hover{
+    background-color:#D3D3D3;
+    border-radius: .6rem;
+    
 }
 nav ul li img 
 {
@@ -68,7 +82,7 @@ nav ul li img
 figure 
 {
     position:relative;
-    background-color:#fff;
+    background-color:var(--bgc-primary);
     max-width: 80rem;
     height: 40rem;
     margin : 10rem auto 10rem auto ;
@@ -86,11 +100,13 @@ figure figcaption h2
     font-weight: bolder;
     margin-bottom: 2rem;
 }
-figure figcaption ol{
+figure figcaption ol
+{
     margin-top: 2rem;
     line-height: 2.5rem;
 }
-figure figcaption ol li{
+figure figcaption ol li
+{
     font-weight: 350;
     margin-top: 2rem;
     line-height: 2.5rem;
@@ -100,8 +116,8 @@ figure button
     position: absolute;
     bottom: 10px;
     right: 10px;
-    background-color:#D14600;
-    color: #fff;
+    background-color:var(--bgc-button);
+    color: var(--bgc-primary);
     border-radius: 5px;
     padding: .5rem  .5rem;
     width: 20rem;
@@ -120,7 +136,7 @@ button img
 footer
 {
     text-align: center;
-    background-color: #fff;
+    background-color: var(--bgc-primary);
     line-height: 3rem;
 }
 
@@ -128,7 +144,7 @@ footer
 @media screen and (max-width: 700px){
     body 
     {
-        background-color:#fff;
+        background-color:var(--bgc-primary);
     }
     main{
         max-width:30rem;
@@ -160,13 +176,5 @@ footer
     figure button 
     {
         margin:0 12rem ;
-    }
-    footer     
-    {
-       padding: 0rem;
-       margin: 20rem auto 0;
-       position: inherit; 
-       bottom: 0;
-       background-color: #eeecec;
     }
 }
