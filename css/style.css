@@ -35,6 +35,8 @@ a
 
 /*theme*/
 
+    
+
 :root
 {
     --bgc-primary:#fff;
@@ -151,8 +153,7 @@ footer
     text-align: center;
     background-color: var(--bgc-primary);
 }
-
-/* responsive */
+/* responsive vertical*/
 @media screen and (max-width: 60rem){
     body{
         background-color: #fff;
@@ -170,7 +171,7 @@ footer
     }
     nav ul li
     {
-       display: block;
+        display: block;
         margin: 0rem;
         text-align: left;
     }
@@ -207,5 +208,38 @@ footer
     footer{
         position: relative;
         width: auto;
+    }
+}
+
+/* responsive horizontal */
+
+@media screen and (orientation:landscape)
+{
+    nav ul li
+    {
+        display: inline-block;
+        margin:0 1rem 0;
+        padding: 0 1rem 0 1rem;
+    }
+    nav ul li:hover
+    {
+        background-color:var(--bgc-hover);
+        border-radius: .6rem;
+    }
+    nav ul li img 
+    {
+        display: inline-block;
+        height: 20px;
+        width: 20px;
+        vertical-align: -0.2rem;
+        margin-right: 1rem;
+    }
+    figure img{
+        display: block;
+        margin:  3rem auto ;
+    }
+    figcaption{
+        display: block;
+        margin:  3rem auto ;
     }
 }
