@@ -185,7 +185,7 @@ footer
     {
         display: block;
         width: 100%;
-        
+
     }
     figure li
     {
@@ -237,7 +237,8 @@ footer
     }
     figure img{
         display: block;
-        margin:  3rem auto ;
+        /* margin:  3rem auto ; */
+        width: 100%;
     }
     figcaption{
         display: block;
